@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-position: -420px -420px, 600px 440px;
+  background-repeat: no-repeat;
+  background-color: var(--Dark-cyan);
+}
+
+.parnt {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+img {
+  border-radius: 50%;
+  width: 120px;
+  border: 5px solid white;
+}
+
+.up {
+  text-align: center;
+  background-color: #ffffff;
+  width: 350px;
+  height: 400px;
+  position: relative;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-image: url(images/bg-pattern-card.svg);
+}
+
+/* .back {
+    width: 100%;
+    height: 35%;
+    background-image: url(images/bg-pattern-card.svg);
+    position: absolute;
+} */
+
+.top {
+  position: relative;
+  top: 70px;
+  font-size: 18px;
+}
+
+span.headr {
+  font-weight: 700;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+span.under {
+  opacity: 0.7;
+  font-weight: 400;
+  color: #2d3248;
+}
+
+span.Name {
+  color: #2d3248;
+  font-size: 12px;
+}
+
+p.j {
+  display: grid;
+  justify-content: flex-start;
+  margin-left: 40px;
+}
+
+.un {
+  display: flex;
+  position: relative;
+  top: 90px;
+  justify-content: space-around;
+  width: 107%;
+}
+
+span.Numpr {
+  color: #2d3248;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+hr {
+  opacity: 0.5;
+  position: relative;
+  top: 85px;
+}
+
+@media (min-width: 300px) and (max-width: 980px) {
+  body {
+    background-position: -400px -400px, 500px 1500px;
+  }
+  .up {
+    width: 850px;
+    height: 1300px;
+    background-size: contain;
+    border-radius: 20px;
+  }
+  img {
+    width: 350px;
+  }
+  span.headr {
+    font-size: 65px;
+  }
+  span.under {
+    font-size: 50px;
+  }
+  .un {
+    display: flex;
+    position: relative;
+    top: 500px;
+    justify-content: space-around;
+    width: 107%;
+  }
+  .top {
+    top: 12%;
+  }
+  hr {
+    top: 35%;
+  }
+  span.Name {
+    font-size: 30px;
+  }
+  span.Numpr {
+    font-size: 60px;
+  }
+}
+
+.attribution {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: var(--Dark-cyan);
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: var(--Very-dark-desaturated-blue);
+}
